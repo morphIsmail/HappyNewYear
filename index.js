@@ -54,18 +54,19 @@ document.querySelector(".custom").addEventListener("input", function(e) {
   if(!e.target.tagName == "INPUT") return
   document.querySelector('.custom_results').innerHTML = ''
   let in1 = document.getElementById("in1").value
+  if(in1 > 6 || in1 < 0 || !in1) {
+    in1 = 0
+  }
   let in2 = document.getElementById("in2").value
+  if(in2 > 6 || in2 < 0 || !in2) {
+    in2 = 0
+  }
   let in3 = document.getElementById("in3").value
+  if(in3 > 6 || in3 < 0 || !in3) {
+    in3 = 0
+  }
   let tmp = arr1[in1]+" "+arr2[in2]+" "+arr3[in3]
   document.querySelector('.custom_results').insertAdjacentHTML('beforeend', `<p>${tmp}</p>`)
 })
 
 console.log(result)
-
-// Снег
-$.fn.snowit({
-  flakeColor: 'rgba(255,255,255,0.5)',
-  total: 1500,
-  minSize : 10,
-  maxSize : 30,
-});

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="snow-it.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>С новым годом!</title>
 </head>
@@ -28,8 +30,15 @@
     </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="snow-it.js"></script>
+  <script>
+    // Снег
+    $.fn.snowit({
+      flakeColor: 'rgba(255,255,255,0.7)',
+      total: 50,
+      minSize : 10,
+      maxSize : 30,
+    });
+  </script>
   <script src="index.js"></script>
 </body>
 </html>
