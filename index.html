@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>С новым годом!</title>
+</head>
+<body>
+
+  <h1>Поздравления с новым, 2023 годом!</h1>
+  <div class="container">
+    <div class="random">
+      <p class="title">Нажатие по кнопке ниже выдаёт случайное поздравление из набора сгенерированных, на базе трех массивов данных.</p>
+      <button class="btn">Случайное поздравление</button>
+      <div class="random_results"></div>
+      <p class="title">Изменив любое из полей ниже можно составить поздравление из трех частей вручную. Можно указать значение от 0 до 6.</p>
+      <div class="custom">
+        <input type="number" max="6" min="0" value="6" id="in1">
+        <input type="number" max="6" min="0" value="3" id="in2">
+        <input type="number" max="6" min="0" value="0" id="in3">
+        <div class="custom_results"></div>
+      </div>
+    </div>
+    <div class="all">
+      <div class="count"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="snow-it.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
